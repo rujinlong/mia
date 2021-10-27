@@ -12,3 +12,6 @@ Changes in version 1.1.x (2021-06-04)
 + bugfix: makePhyloseqFromTreeSummarizedExperiment checks now for rowTree be compatible
 + bugfix: meltAssay supports Matrix types
 + bugfix: meltAssay is able to include rowData also when there are duplicated rownames
+
+Changes in version 1.2.1 (2021-10-27)
++ added getExperimentCrossCorrelation for calculatting cross-correlation between features
