@@ -128,22 +128,29 @@ head(result, 5)
 tse <- mae[[1]]
 altExp(tse, "exp2") <- mae[[2]]
 # Whe mode = matrix, matrix is returned
-result <- getExperimentCrossCorrelation(tse, y = "exp2", method = "pearson", 
+result <- getExperimentCrossCorrelation(tse,
+                                        experiment2 = "exp2",
+                                        method = "pearson", 
                                         mode = "matrix")
 # Show first 5 entries
 head(result, 5)
 
 # testForExperimentCorrelation returns also significances
 # filter_self_correlations = TRUE filters self correlations
-result <- testForExperimentCrossCorrelation(tse, y = tse, method = "pearson",
+result <- testForExperimentCrossCorrelation(tse,
+                                            experiment2 = tse,
+                                            method = "pearson",
                                             filter_self_correlations = TRUE)
 # Show first 5 entries
 head(result, 5)
 
 # Also getExperimentCrossCorrelation returns significances when 
 # test_signicance = TRUE
-result <- getExperimentCrossCorrelation(mae[[1]], y = mae[[2]], method = "pearson",
-                                        mode = "matrix", test_significance = TRUE)
+result <- getExperimentCrossCorrelation(mae[[1]],
+                                        experiment2 = mae[[2]],
+                                        method = "pearson",
+                                        mode = "matrix",
+                                        test_significance = TRUE)
 # Returned value is a list of matrices
 names(result)
 }
