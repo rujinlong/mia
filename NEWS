@@ -24,3 +24,6 @@ Changes in version 1.2.3 (2021-11-27)
 
 Changes in version 1.2.4 (2022-02-06)
 + bugfix: makeTreeSEFromPseq -- orientation of assay is taken into account
+
+Changes in version 1.2.6 (2022-02-06)
++ bugfix: getExperimentCrossCorrelation's "matrix"" mode works with features named equally
