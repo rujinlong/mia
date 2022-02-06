@@ -21,3 +21,6 @@ Changes in version 1.2.2 (2021-11-05)
 
 Changes in version 1.2.3 (2021-11-27)
 + bugfix: taxonomyTree gave error when taxa were agglomerated at highest level (taxa name mismatch)
+
+Changes in version 1.2.4 (2022-02-06)
++ bugfix: makeTreeSEFromPseq -- orientation of assay is taken into account
