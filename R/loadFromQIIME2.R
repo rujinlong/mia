@@ -266,7 +266,7 @@ readQZA <- function(file, temp = tempdir(), ...) {
 #' @importFrom utils read.table
 #' @noRd
 .read_q2taxa <- function(file, ...) {
-    taxa_tab <- utils::read.table(file, sep = '\t', header = TRUE, ...)
+    taxa_tab <- utils::read.table(file, sep = '\t', header = TRUE, comment.char = "!")
     
     confidence <- NULL
     featureID <- NULL
